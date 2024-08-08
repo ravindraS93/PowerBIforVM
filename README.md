@@ -23,4 +23,33 @@ The base data we are taking for building this dashboard is being taken from the 
 
 **UseCase**
 
-1. 
+Here are some key metrics that are essential for comprehensive vulnerability reporting:
+1. **Count of detected vs fixed vulnerabilities per month**: This helps in understanding the remediation efforts and their effectiveness over time.
+2. **Trend of inflow based on severity**: Analyzing the severity of incoming vulnerabilities to prioritize remediation efforts.
+3. **Count of vulnerabilities with and without exploits**: Differentiating between vulnerabilities that have known exploits and those that do not, to assess the risk level.
+4. **Count of assets assessed based on environment**: Tracking the number of assets evaluated in different environments (e.g., production, development) to ensure comprehensive coverage.
+5. **Summary of vulnerabilities per OS platform**: Providing an overview of vulnerabilities categorized by operating system platforms to identify platform-specific risks.
+
+These metrics provide a holistic view of the vulnerability landscape and help in making informed decisions to enhance security posture.
+
+**What did we do?**
+
+Power BI is indeed a vast topic, but here's a simple explanation of the steps taken to visualize the data:
+
+1. **Created a Date Table**: Using Power Query, a Date Table was created with columns for week number, month, and year.
+2. **Merged the Date Table with the Detection Table**: The Date column in the Date Table was mapped to the First Detected and Actual Fixed Date columns in the Detection Table.
+3. **Grouped the Rows by Date and Severity**: The data was grouped by date and severity to organize the information effectively.
+4. **Created Count for Matching Dates Based on Severity**: Counts were calculated for matching dates, categorized by severity.
+5. **Created Required Measures**: Various measures were created from the merged data to facilitate detailed analysis and visualization.
+
+These steps helped in transforming raw data into meaningful insights, making it easier to understand and act upon the vulnerability landscape.
+
+**How to see the Dashboard?**
+1. Download the .PBIX file
+2. Install Power BI Desktop
+3. Open the .PBIX file
+
+Below is how the Dashboard looks like
+
+![WhatsApp Image 2024-08-07 at 20 25 00_6dc187f9](https://github.com/user-attachments/assets/2593d71e-888b-4753-a6e7-1e95aa6c5500)
+
